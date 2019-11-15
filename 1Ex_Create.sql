@@ -51,7 +51,14 @@ CREATE TABLE Posts (
 	PostText NVARCHAR(255) NOT NULL,
     PostId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 
-    ThemeId INT NOT NULL
+	AuthorId INT
+
+    CONSTRAINT FK_Users_Posts FOREIGN KEY (AuthorId)
+    REFERENCES Users (UserId)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+
+    ThemeId INT
 
     CONSTRAINT FK_Themes_Posts FOREIGN KEY (ThemeId)
     REFERENCES Themes (ThemeId)

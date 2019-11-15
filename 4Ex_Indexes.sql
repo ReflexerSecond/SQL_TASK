@@ -1,0 +1,32 @@
+Use BlogDB
+Go
+
+CREATE NONCLUSTERED INDEX IX_Users 
+ON Users (UserName)
+GO
+
+CREATE NONCLUSTERED INDEX IX_INCLUDE_USERS
+  ON Users (UserName)
+  INCLUDE (CityId);
+GO
+
+CREATE NONCLUSTERED INDEX IX_FullUSER
+ON Users (UserName, CityId)
+WHERE CityId IS NOT NULL;
+GO
+
+ALTER INDEX IX_Users ON Users
+  REORGANIZE
+GO
+
+CREATE NONCLUSTERED INDEX IX_Posts_with_theme
+ON Posts (PostId, PostTitle, ThemeId)
+WHERE ThemeId is NOT Null
+GO
+
+CREATE NONCLUSTERED INDEX IX_Country
+  ON Countries (CountryName Desc)
+  WITH ( DATA_COMPRESSION = ROW )
+GO
+
+Select CountryName from Countries

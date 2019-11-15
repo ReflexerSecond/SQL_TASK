@@ -1,6 +1,6 @@
---–азобратьс€
 USE BlogDB;
 GO
+
 CREATE TRIGGER Users_INSERT ON Users
 AFTER INSERT
 AS
@@ -42,4 +42,3 @@ INSTEAD OF DELETE
 AS
 PRINT 'язык не может быть удалЄн'
 GO 
-
