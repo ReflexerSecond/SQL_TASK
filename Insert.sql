@@ -314,3 +314,33 @@ VALUES
 (N'Гамма'),
 (N'Омега')
 GO
+
+Insert Into POSTS
+(
+AuthorId, PostTitle,PostText
+)
+VALUES
+(1,N'Тестовый пост 1',N'Это тестовый пост'),
+(2,N'Тестовый пост 2',N'Это тоже тестовый пост')
+GO
+
+Insert Into LIKES
+(
+PostId,UserId
+)
+VALUES
+(1,2),
+(1,3),
+(1,4),
+(2,4),
+(2,5)
+GO
+
+INSERT INTO Comments
+(
+PostId, UserId, PostText
+)
+VALUES
+(1,2,'Позитивный комментарий'),
+(2,1,'Хтоническая микроволновка')
+GO
