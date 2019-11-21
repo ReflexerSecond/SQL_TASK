@@ -305,9 +305,7 @@ VALUES
 GO
 --Null city
 INSERT into Users
-( 
-	UserName
-)
+(UserName)
 VALUES
 (N'Альфа'),
 (N'Бета'),
@@ -323,11 +321,14 @@ VALUES
 (1,N'Тестовый пост 1',N'Это тестовый пост'),
 (2,N'Тестовый пост 2',N'Это тоже тестовый пост')
 GO
+insert Into POSTS (AuthorId, PostTitle,PostText, ThemeId) 
+Values
+(3,N'Тестовый пост 3',N'Октаэдр', 3),
+(3,N'Тестовый пост 4',N'Октаэдр2', 2)
+Go
 
 Insert Into LIKES
-(
-PostId,UserId
-)
+(PostId,UserId)
 VALUES
 (1,2),
 (1,3),
@@ -337,9 +338,7 @@ VALUES
 GO
 
 INSERT INTO Comments
-(
-PostId, UserId, PostText
-)
+(PostId, UserId, PostText)
 VALUES
 (1,2,'Позитивный комментарий'),
 (2,1,'Хтоническая микроволновка')
