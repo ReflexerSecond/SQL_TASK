@@ -85,7 +85,7 @@ LEFT Join Cities c ON u.CityId = c.CityId
 
 --COALESCE
 SELECT UserName,
-COALESCE (CityId,-1)
+COALESCE (IIF(CityId>10 or CityId is Null,CityId,0),-1)
 FROM Users
 
 -- UPPER

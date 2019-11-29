@@ -1,249 +1,7 @@
--- Insert rows into table 'Countries' in schema '[dbo]'
-INSERT Countries
-( -- Columns to insert data into
- CountryName
-)
-VALUES
-( N'Австралия' ),
-( N'Австрия' ),
-( N'Азербайджан' ),
-( N'Албания' ),
-( N'Алжир' ),
-( N'Американский' ),
-( N'Ангилья' ),
-( N'Англия' ),
-( N'Ангола' ),
-( N'Андорра' ),
-( N'Антарктика' ),
-( N'Антигуа' ),
-( N'Антильские' ),
-( N'Арабские' ),
-( N'Аргентина' ),
-( N'Армения' ),
-( N'Аруба' ),
-( N'Афганистан' ),
-( N'Багамские' ),
-( N'Бангладеш' ),
-( N'Барбадос' ),
-( N'Бахрейн' ),
-( N'Беларусь' ),
-( N'Белиз' ),
-( N'Бельгия' ),
-( N'Бенин' ),
-( N'Бермуды' ),
-( N'Болгария' ),
-( N'Боливия' ),
-( N'Босния' ),
-( N'Ботсвана' ),
-( N'Бразилия' ),
-( N'Британские' ),
-( N'Бруней' ),
-( N'Буркина' ),
-( N'Бурунди' ),
-( N'Бутан' ),
-( N'Вануату' ),
-( N'Ватикан' ),
-( N'Великобритания' ),
-( N'Венгрия' ),
-( N'Венесуэла' ),
-( N'Виргинские' ),
-( N'Виргинские' ),
-( N'Восточный' ),
-( N'Вьетнам' ),
-( N'Габон' ),
-( N'Гаити' ),
-( N'Гайана' ),
-( N'Гамбия' ),
-( N'Гана' ),
-( N'Гваделупа' ),
-( N'Гватемала' ),
-( N'Гвинея' ),
-( N'Гвинея-Бисау' ),
-( N'Германия' ),
-( N'Гибралтар' ),
-( N'Гондурас' ),
-( N'Гонконг' ),
-( N'Гренада' ),
-( N'Гренландия' ),
-( N'Греция' ),
-( N'Грузия' ),
-( N'Гуам' ),
-( N'Дания' ),
-( N'Джибути' ),
-( N'Доминика' ),
-( N'Доминикана' ),
-( N'Египет' ),
-( N'ЕС' ),
-( N'Замбия' ),
-( N'Западная' ),
-( N'Зимбабве' ),
-( N'Израиль' ),
-( N'Индия' ),
-( N'Индонезия' ),
-( N'Иордания' ),
-( N'Ирак' ),
-( N'Иран' ),
-( N'Ирландия' ),
-( N'Исландия' ),
-( N'Испания' ),
-( N'Италия' ),
-( N'Йемен' ),
-( N'Казахстан' ),
-( N'Каймановы' ),
-( N'Камбоджа' ),
-( N'Камерун' ),
-( N'Канада' ),
-( N'Катар' ),
-( N'Кения' ),
-( N'Кипр' ),
-( N'Кирибати' ),
-( N'Китайская' ),
-( N'Кокосовые' ),
-( N'Колумбия' ),
-( N'Коморские' ),
-( N'Конго' ),
-( N'Корейская республика' ),
-( N'Корея' ),
-( N'Коста' ),
-( N'Куба' ),
-( N'Кувейт' ),
-( N'Кыргызстан' ),
-( N'Лаос' ),
-( N'Латвия' ),
-( N'Лесото' ),
-( N'Либерия' ),
-( N'Ливан' ),
-( N'Ливия' ),
-( N'Литва' ),
-( N'Лихтенштейн' ),
-( N'Люксембург' ),
-( N'Маврикий' ),
-( N'Мавритания' ),
-( N'Мадагаскар' ),
-( N'Майотта' ),
-( N'Макао' ),
-( N'Македония' ),
-( N'Малави' ),
-( N'Малайзия' ),
-( N'Мали' ),
-( N'Мальдивские' ),
-( N'Мальта' ),
-( N'Марианские' ),
-( N'Марокко' ),
-( N'Мартиника' ),
-( N'Маршалловы' ),
-( N'Мексика' ),
-( N'Микронезия' ),
-( N'Мозамбик' ),
-( N'Молдова' ),
-( N'Монако' ),
-( N'Монголия' ),
-( N'Монтсеррат' ),
-( N'Мьянма' ),
-( N'Намибия' ),
-( N'Науру' ),
-( N'Непал' ),
-( N'Нигер' ),
-( N'Нигерия' ),
-( N'Нидерланды' ),
-( N'Никарагуа' ),
-( N'Ниуэ' ),
-( N'Новая Гвинея' ),
-( N'Норвегия' ),
-( N'Нормандские' ),
-( N'Оман' ),
-( N'Пакистан' ),
-( N'Палау' ),
-( N'Палестина' ),
-( N'Панама' ),
-( N'Папуа' ),
-( N'Парагвай' ),
-( N'Перу' ),
-( N'Польша' ),
-( N'Португалия' ),
-( N'Пуэрто-Рико' ),
-( N'Реюньон' ),
-( N'Россия' ),
-( N'Руанда' ),
-( N'Румыния' ),
-( N'Сальвадор' ),
-( N'Сан-Марино' ),
-( N'Сан-Томе' ),
-( N'Саудовская' ),
-( N'Свазиленд' ),
-( N'Северная' ),
-( N'Сейшельские' ),
-( N'Сенегал' ),
-( N'Сен-Пьер' ),
-( N'Сент-Винсент' ),
-( N'Сент-Китс' ),
-( N'Сент-Люсия' ),
-( N'Сингапур' ),
-( N'Сирия' ),
-( N'Словакия' ),
-( N'Словения' ),
-( N'Соединенные Штаты Америки' ),
-( N'Соломоновы' ),
-( N'Сомали' ),
-( N'Судан' ),
-( N'Суринам' ),
-( N'Сьерра-Леоне' ),
-( N'Таджикистан' ),
-( N'Тайвань' ),
-( N'Тайланд' ),
-( N'Танзания' ),
-( N'Того' ),
-( N'Токелау' ),
-( N'Тонга' ),
-( N'Тринидад' ),
-( N'Тувалу' ),
-( N'Тунис' ),
-( N'Туркменистан' ),
-( N'Турция' ),
-( N'Уганда' ),
-( N'Узбекистан' ),
-( N'Украина' ),
-( N'Уругвай' ),
-( N'Уэльс' ),
-( N'Фарерские' ),
-( N'Фиджи' ),
-( N'Филиппины' ),
-( N'Финляндия' ),
-( N'Фолклендские' ),
-( N'Франция' ),
-( N'Хорватия' ),
-( N'Центральная' ),
-( N'Чад' ),
-( N'Чехия' ),
-( N'Чили' ),
-( N'Швейцария' ),
-( N'Швеция' ),
-( N'Шотландия' ),
-( N'Шри Ланка' ),
-( N'Эквадор' ),
-( N'Экваториальная' ),
-( N'Эритрея' ),
-( N'Эстония' ),
-( N'Эфиопия' ),
-( N'ЮАР' ),
-( N'Югославия' ),
-( N'Южная' ),
-( N'Ямайка' ),
-( N'Япония' );
-GO
+-- Insert rows into tables
+use BlogDB
+go
 
--- Cities
-INSERT into Cities
-( 
- Countryid, CityName
-)
-VALUES
-(160, N'Москва'),
-(160, N'Самара'),
-(160, N'Саратов')
-GO
-
--- Languages
 INSERT into Languages
 ( 
  LanguageName
@@ -259,7 +17,6 @@ VALUES
 (N'Французский')
 GO
 
-
 INSERT into Themes
 ( 
  ThemeName
@@ -274,72 +31,119 @@ VALUES
 (N'Разное')
 GO
 
-SELECT TOP (10) CityName,CityId,CountryId FROM Cities
+-- Random string
+Create procedure RandomStringTest 
+@count int, @str nvarchar(255) output
+as begin
+	declare @ind int = 1;
+	set @str = N''
 
-INSERT into Users
-( 
- CityId, UserName
-)
-VALUES
-(1,N'Алексей'),
-(1,N'Виталий'),
-(1,N'Антон'),
-(1,N'Лариса'),
-(1,N'Дмитрий'),
-(1,N'Ольга'),
-(1,N'Анатолий'),
-(1,N'Иван'),
-(2,N'НеИван'),
-(2,N'Инокентий'),
-(2,N'Оксана'),
-(2,N'Илья'),
-(2,N'Сергей'),
-(2,N'НеСергей'),
-(2,N'Роман'),
-(3,N'Наталья'),
-(3,N'Юлия'),
-(3,N'Автобус'),
-(3,N'Александр'),
-(3,N'Лев'),
-(3,N'Пётр')
-GO
---Null city
-INSERT into Users
-(UserName)
-VALUES
-(N'Альфа'),
-(N'Бета'),
-(N'Гамма'),
-(N'Омега')
-GO
-
-Insert Into POSTS
-(
-AuthorId, PostTitle,PostText
-)
-VALUES
-(1,N'Тестовый пост 1',N'Это тестовый пост'),
-(2,N'Тестовый пост 2',N'Это тоже тестовый пост')
-GO
-insert Into POSTS (AuthorId, PostTitle,PostText, ThemeId) 
-Values
-(3,N'Тестовый пост 3',N'Октаэдр', 3),
-(3,N'Тестовый пост 4',N'Октаэдр2', 2)
+	while @ind < @count begin
+		set @ind += 1;
+		set @str = Concat(@str, char(CAST(RAND()*26 AS int)+97));
+	end
+end;
 Go
+-- Countries
+Create procedure InsertCountries 
+@count int
+as begin
+	declare @ind int = 1;
+	declare @str nvarchar(255);
+	while @ind <= @count begin
+		EXEC RandomStringTest 6, @str output
+		set @ind += 1;
+		insert into Countries(CountryName) Values (Concat(@str, N' country'))
+	end
+end;
+Go
+-- Cities
+Create procedure InsertCities
+@count int
+as begin
+	declare @ind int = 1;
+	declare @str nvarchar(255);
 
-Insert Into LIKES
-(PostId,UserId)
-VALUES
-(1,2),
-(1,3),
-(1,4),
-(2,4),
-(2,5)
-GO
+	while @ind <= @count begin
+		EXEC RandomStringTest 5, @str output
+		set @ind += 1;
+		insert into Cities(CountryId, CityName) Values ((select Top 1 CountryId from Countries order by newid()) ,Concat(@str, N' city'))
+	end
+end;
+Go
+-- Users
+Create procedure InsertUsers
+@count int
+as begin
+	declare @ind int = 1;
+	declare @str nvarchar(255);
 
-INSERT INTO Comments
-(PostId, UserId, PostText)
-VALUES
-(1,2,'Позитивный комментарий'),
-(2,1,'Хтоническая микроволновка')
-GO
+	while @ind <= @count begin
+		EXEC RandomStringTest 3, @str output
+		set @ind += 1;
+		insert into Users(CityId, UserName) Values ( (select Top 1 CityId from Cities order by newid()) ,Concat(@str, N' user'))
+	end
+end;
+Go
+-- Posts
+Create procedure InsertPosts
+@count int
+as begin
+	declare @ind int = 1;
+	declare @title nvarchar(20);
+	declare @text nvarchar(40);
+	while @ind <= @count begin
+		set @ind += 1;
+
+		EXEC RandomStringTest 20, @title output
+		EXEC RandomStringTest 40, @text output
+		insert into Posts(PostTitle, PostText, AuthorId, ThemeId, LanguageId) 
+		Values 
+		(@title,@text,(select Top 1 UserId from Users order by newid()),
+		(select Top 1 ThemeId from Themes order by newid()),
+		(select Top 1 LanguageId from Languages order by newid()))
+	end
+end;
+Go
+-- Comments
+Create procedure InsertComments
+@count int
+as begin
+	declare @ind int = 1;
+	declare @text nvarchar(40);
+	while @ind <= @count begin
+		set @ind += 1;
+
+		EXEC RandomStringTest 40, @text output
+		insert into Comments(PostText, UserId, PostId) 
+		Values 
+		(@text,
+		(select Top 1 UserId from Users order by newid()),
+		(select Top 1 PostId from Posts order by newid()))
+	end
+end;
+Go
+-- Likes
+Create procedure InsertLikes
+@count int
+as begin
+	declare @ind int = 1;
+	declare @text nvarchar(40);
+	while @ind <= @count begin
+		set @ind += 1;
+
+		EXEC RandomStringTest 40, @text output
+		insert into Likes( UserId, PostId) 
+		Values 
+		((select Top 1 UserId from Users z order by newid()),
+		(select Top 1 PostId from Posts s order by newid())) 
+	end
+end;
+Go
+-- Execute
+Exec InsertCountries @count = 100;
+Exec InsertCities @count = 100;
+Exec InsertUsers @count = 1000;
+Exec InsertPosts @count = 6000;
+Exec InsertComments @count = 5000;
+Exec InsertLikes @count = 10000;
